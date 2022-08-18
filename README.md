@@ -1,2 +1,2 @@
-# SortAlgorithms
-I trained this sort algorithms.
+#   Algorithms
+I trained this algorithms.
