@@ -33,9 +33,8 @@ public class App {
 		for (int sayi : sayilar) {
 			System.out.print(sayi + " ");
 		}
-        System.out.println("\n");
-		System.out.println(
-"Sıralamak istediğiniz türü seçiniz.\n 1.Bubble sort\n 2.Insertion sort\n 3.Merge sort\n 4.Quick sort\n 5.Shell sort");
+                System.out.println("\n");
+		System.out.println("Sıralamak istediğiniz türü seçiniz.\n 1.Bubble sort\n 2.Insertion sort\n 3.Merge sort\n 4.Quick sort\n 5.Shell sort");
 		System.out.print("İstediğiniz sıralama türü:");
 		int choose = scanner.nextInt();
 		scanner.close();
@@ -56,13 +55,13 @@ public class App {
 			long start1Time = System.nanoTime();
 			sortInsertion.sortArray(sayilar);
 			long end1Time = System.nanoTime();
-			System.out.println("Çalışma süresi:"+(double)(end1Time-start1Time)/1000000+" milisaniyedir.\n");
+		        System.out.println("Çalışma süresi:"+(double)(end1Time-start1Time)/1000000+" milisaniyedir.\n");
 			break;
 			
 		case 3:
 			 MergeSort sortMerge = new MergeSort();
-             int son = sayilar.length - 1;
-             long start2Time = System.nanoTime();
+                         int son = sayilar.length - 1;
+                         long start2Time = System.nanoTime();
 			 sortMerge.mergeSort(sayilar, 0, son);
 			 long end2Time = System.nanoTime();
 			 System.out.println("Çalışma süresi:"+(double)(end2Time-start2Time)/1000000+" milisaniyedir.\n");
@@ -73,7 +72,7 @@ public class App {
 			long start3Time = System.nanoTime();
 			sortQuick.sortArray(sayilar);
 			long end3Time = System.nanoTime();
-		    System.out.println("Çalışma süresi:"+(double)(end3Time-start3Time)/1000000+" milisaniyedir.\n");
+		        System.out.println("Çalışma süresi:"+(double)(end3Time-start3Time)/1000000+" milisaniyedir.\n");
 			break;
 			
 		case 5:
