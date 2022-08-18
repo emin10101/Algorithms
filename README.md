@@ -1,2 +1,2 @@
-#   Algorithms
-I trained this algorithms.
+# Algorithms
+I studied with these algorithms
